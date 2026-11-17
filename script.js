@@ -135,7 +135,7 @@ const projects = [
         icon: 'fa-solid fa-bag-shopping',
         theme: 'project-market',
         repo: 'https://github.com/Mohit3700n/CollegeMarketPlace.git',
-        demo: ''
+        demo: 'https://college-market-place-liard.vercel.app/'
     }
 ];
 
