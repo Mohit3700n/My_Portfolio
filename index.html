@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Prajapati | Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Particles Canvas -->
+<canvas id="particles"></canvas>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <button class="close-menu" onclick="closeMobileMenu()">✕</button>
+    <a href="#home" onclick="closeMobileMenu()">Home</a>
+    <a href="#about" onclick="closeMobileMenu()">About</a>
+    <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+</div>
+
+<!-- Navbar -->
+<nav id="navbar">
+    <div class="nav-logo">MP.</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="openMobileMenu()">
+        <span></span><span></span><span></span>
+    </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+    <div class="hero-layout">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                Available for Internships & Freelance Projects
+            </div>
+            <h1>
+                <span class="white">Hello, I'm</span>
+                <span class="name">Mohit Prajapati</span>
+            </h1>
+            <p class="hero-subtitle">3rd Year AI & ML Engineering Student</p>
+            <div class="typing-container">
+                <span>I Build </span>
+                <span class="typing-text" id="typingText"></span>
+                <span class="cursor"></span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">
+                    <i class="fas fa-rocket"></i> View My Work
+                </a>
+                <a href="#contact" class="btn-outline">
+                    <i class="fas fa-paper-plane"></i> Hire Me
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number" id="count1">0</div>
+                    <div class="stat-label">Projects Built</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="count2">0</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="count3">0</div>
+                    <div class="stat-label">Apps Developed</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="count4">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual reveal" aria-label="Developer profile card">
+            <div class="code-card">
+                <div class="code-card-header">
+                    <div class="code-window-dots" aria-hidden="true">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span>mohit.dev / profile.js</span>
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                </div>
+                <div class="code-card-body" aria-label="Developer profile">
+                    <p><span class="code-keyword">const</span> developer = {</p>
+                    <p class="code-indent"><span class="code-property">name</span>: <span class="code-string">'Mohit Prajapati'</span>,</p>
+                    <p class="code-indent"><span class="code-property">focus</span>: <span class="code-string">'AI &amp; ML'</span>,</p>
+                    <p class="code-indent"><span class="code-property">builds</span>: [<span class="code-string">'Web'</span>, <span class="code-string">'Mobile'</span>, <span class="code-string">'Desktop'</span>],</p>
+                    <p class="code-indent"><span class="code-property">status</span>: <span class="code-string">'Open to opportunities'</span></p>
+                    <p>};</p>
+                </div>
+                <div class="code-card-footer">
+                    <span class="code-status-dot"></span>
+                    Turning ideas into useful products
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image-wrapper reveal">
+                <div class="about-image-box">
+                    <div class="about-avatar">👨‍💻</div>
+                </div>
+                <div class="floating-badge badge-1">🚀 Android Dev</div>
+                <div class="floating-badge badge-2">💻 Web Dev</div>
+                <div class="floating-badge badge-3">🤖 AI/ML</div>
+                <div class="floating-badge badge-4">🐍 Python</div>
+                <div class="floating-badge badge-5">🧠 Machine Learning</div>
+            </div>
+            <div class="about-text reveal">
+                <div class="section-tag">✨ About Me</div>
+                <h2 class="section-title">Passionate <span>Developer</span> & Problem Solver</h2>
+                <p>Hey! I'm <strong>Mohit Prajapati</strong>, a passionate full-stack developer and Android enthusiast currently pursuing my <strong>3rd year B.Tech in Artificial Intelligence & Machine Learning</strong>.</p>
+                <p>I specialize in building <strong>Android apps with Java & Flutter</strong>, creating dynamic websites with <strong>PHP & MySQL</strong>, and crafting beautiful frontends. I love turning complex ideas into clean, user-friendly digital experiences.</p>
+                <p>When I'm not coding, I'm exploring <strong>Machine Learning concepts</strong>, contributing to open-source projects, or learning the latest tech trends.</p>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-label">Name</span>
+                        <span class="info-value">Mohit Prajapati</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Degree</span>
+                        <span class="info-value">B.Tech AIML</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Year</span>
+                        <span class="info-value">3rd Year (2024-2028)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Status</span>
+                        <span class="info-value" style="color:#4ade80;">✅ Open to Work</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Focus</span>
+                        <span class="info-value">Mobile & Web Dev</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Location</span>
+                        <span class="info-value">India 🇮🇳</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+    <div class="container">
+        <div class="section-tag reveal">⚡ Skills</div>
+        <h2 class="section-title reveal">My <span>Tech Stack</span></h2>
+        <p class="section-subtitle reveal">Technologies and tools I work with to bring ideas to life</p>
+
+        <div class="skills-tabs reveal">
+            <button class="tab-btn active" onclick="showSkills('all', this)">All</button>
+            <button class="tab-btn" onclick="showSkills('mobile', this)">📱 Mobile</button>
+            <button class="tab-btn" onclick="showSkills('web', this)">🌐 Web</button>
+            <button class="tab-btn" onclick="showSkills('database', this)">🗄️ Database</button>
+            <button class="tab-btn" onclick="showSkills('tools', this)">🛠️ Tools</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+            <!-- Mobile Skills -->
+            <div class="skill-card" data-cat="mobile">
+                <span class="skill-icon">🤖</span>
+                <div class="skill-name">Java</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-card" data-cat="mobile">
+                <span class="skill-icon">💙</span>
+                <div class="skill-name">Flutter</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <!-- <div class="skill-card" data-cat="mobile">
+                <span class="skill-icon">🎯</span>
+                <div class="skill-name">Dart</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div> -->
+            <div class="skill-card" data-cat="mobile">
+                <span class="skill-icon">📱</span>
+                <div class="skill-name">Android Studio</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <!-- Web Skills -->
+            <!-- <div class="skill-card" data-cat="web">
+                <span class="skill-icon">🌐</span>
+                <div class="skill-name">HTML5</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div> -->
+            <div class="skill-card" data-cat="web">
+                <span class="skill-icon">🎨</span>
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-card" data-cat="web">
+                <span class="skill-icon">⚡</span>
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-card" data-cat="web">
+                <span class="skill-icon">🐘</span>
+                <div class="skill-name">PHP</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <!-- Database -->
+            <div class="skill-card" data-cat="database">
+                <span class="skill-icon">🗄️</span>
+                <div class="skill-name">MySQL</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-card" data-cat="database">
+                <span class="skill-icon">🔥</span>
+                <div class="skill-name">Firebase</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-card" data-cat="database">
+                <span class="skill-icon">📊</span>
+                <div class="skill-name">SQLite</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <!-- Tools -->
+            <div class="skill-card" data-cat="tools">
+                <span class="skill-icon">🐙</span>
+                <div class="skill-name">Git & GitHub</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-card" data-cat="tools">
+                <span class="skill-icon">🐍</span>
+                <div class="skill-name">Python</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-card" data-cat="tools">
+                <span class="skill-icon">🎨</span>
+                <div class="skill-name">Figma</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-card" data-cat="web">
+                <span class="skill-icon">🅱️</span>
+                <div class="skill-name">Bootstrap</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-card" data-cat="tools">
+                <span class="skill-icon">🔬</span>
+                <div class="skill-name">ML / AI</div>
+                <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+    <div class="container">
+        <div class="section-tag reveal">🚀 Portfolio</div>
+        <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+        <p class="section-subtitle reveal">A selection of real projects I've built from scratch</p>
+
+        <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+</section>
+
+<!-- ===== EXPERIENCE / TIMELINE ===== -->
+<section id="experience">
+    <div class="container">
+        <div class="section-tag reveal">📅 Journey</div>
+        <h2 class="section-title reveal" style="text-align:center;">My <span>Learning Journey</span></h2>
+        <p class="section-subtitle reveal" style="margin:0 auto 60px; text-align:center;">From student to developer — here's my story</p>
+
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-date">📅 2024 – Present</div>
+                    <div class="timeline-title">B.Tech in AI & ML Engineering</div>
+                    <div class="timeline-org">🏛️ St. John College Of Engineering and Management</div>
+                    <p class="timeline-desc">Pursuing engineering with focus on Artificial Intelligence, Machine Learning, Data Structures, and Software Development principles.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-date">📅 2024</div>
+                    <div class="timeline-title">Android Development Mastery</div>
+                    <div class="timeline-org">🤖 Java & Android Studio</div>
+                    <p class="timeline-desc">Built 10+ Android apps using Java and Android Studio. Learned Firebase integration, REST APIs, and Material Design principles.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-date">📅 2024</div>
+                    <div class="timeline-title">Flutter & Dart Development</div>
+                    <div class="timeline-org">💙 Cross-Platform Apps</div>
+                    <p class="timeline-desc">Learned Flutter framework to build beautiful cross-platform apps for both Android and iOS with a single codebase.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-date">📅 2023</div>
+                    <div class="timeline-title">Full-Stack Web Development</div>
+                    <div class="timeline-org">🌐 PHP, MySQL, HTML, CSS, JS</div>
+                    <p class="timeline-desc">Mastered full-stack web development including frontend design, PHP backend development, MySQL database management, and REST API creation.</p>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-date">📅 2025 – Ongoing</div>
+                    <div class="timeline-title">AI / ML Exploration</div>
+                    <div class="timeline-org">🧠 Python, TensorFlow, Scikit-learn</div>
+                    <p class="timeline-desc">Exploring machine learning models, neural networks, and integrating AI features into mobile and web applications.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+    <div class="container">
+        <div class="section-tag reveal">📬 Contact</div>
+        <h2 class="section-title reveal">Let's <span>Work Together!</span></h2>
+        <p class="section-subtitle reveal">Have a project in mind? I'd love to hear from you. Send me a message!</p>
+
+        <div class="contact-wrapper">
+            <div class="contact-info reveal">
+                <h3>Get In Touch</h3>
+                <p>I'm currently open to internship opportunities, freelance projects, and exciting collaborations. Let's build something amazing together!</p>
+
+                <a class="contact-item" data-contact-link="email">
+                    <div class="contact-icon"><i class="fas fa-envelope" style="color:white;"></i></div>
+                    <div>
+                        <div class="contact-detail-label">Email</div>
+                        <div class="contact-detail-value" data-contact-value="email"></div>
+                    </div>
+                </a>
+
+                <a class="contact-item" data-contact-link="phone">
+                    <div class="contact-icon"><i class="fas fa-phone" style="color:white;"></i></div>
+                    <div>
+                        <div class="contact-detail-label">Phone</div>
+                        <div class="contact-detail-value" data-contact-value="phone"></div>
+                    </div>
+                </a>
+
+                <a class="contact-item" data-profile="linkedin" target="_blank" rel="noopener noreferrer">
+                    <div class="contact-icon"><i class="fab fa-linkedin-in" style="color:white;"></i></div>
+                    <div>
+                        <div class="contact-detail-label">LinkedIn</div>
+                        <div class="contact-detail-value" data-contact-value="linkedin"></div>
+                    </div>
+                </a>
+
+                <a class="contact-item" data-profile="github" target="_blank" rel="noopener noreferrer">
+                    <div class="contact-icon"><i class="fab fa-github" style="color:white;"></i></div>
+                    <div>
+                        <div class="contact-detail-label">GitHub</div>
+                        <div class="contact-detail-value" data-contact-value="github"></div>
+                    </div>
+                </a>
+
+                <div class="social-links">
+                    <a class="social-btn" data-profile="github" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a class="social-btn" data-profile="linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-btn" data-profile="twitter" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    <a class="social-btn" data-profile="instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a class="social-btn" data-profile="whatsapp" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <form class="contact-form reveal" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label" for="contactName">Your Name</label>
+                        <input type="text" class="form-input" id="contactName" name="name" placeholder="Your name" autocomplete="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="contactEmail">Your Email</label>
+                        <input type="email" class="form-input" id="contactEmail" name="email" placeholder="you@example.com" autocomplete="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contactSubject">Subject</label>
+                    <input type="text" class="form-input" id="contactSubject" name="subject" placeholder="Project collaboration" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contactBudget">Budget (Optional)</label>
+                    <input type="text" class="form-input" id="contactBudget" name="budget" placeholder="Optional">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="contactMessage">Message</label>
+                    <textarea class="form-textarea" id="contactMessage" name="message" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button class="btn-submit" type="submit">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+                <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-logo">Mohit Prajapati</div>
+    <p class="footer-text">Built with ❤️ & lots of ☕ by <span>Mohit Prajapati</span></p>
+    <p class="footer-text" style="margin-top:8px; font-size:0.8rem;">© <span id="currentYear"></span> All Rights Reserved</p>
+</footer>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script src="script.js"></script>
+</body>
+</html>
